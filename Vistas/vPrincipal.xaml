@@ -9,40 +9,120 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Picker x:Name="pkEstudiante" Title="Elija un Estudiante">
-           
-           
-            <Picker.Items>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <Label 
+    Text="Estudiante"
+    VerticalTextAlignment="Center"
+    Grid.Row="0"
+    Grid.Column="0"
+    TextColor="Blue"
+/>
+            
+            <Picker x:Name="pkEstudiante" Title="Elija un Estudiante"
+                Grid.Row="0"
+                Grid.Column="1">
 
-                <x:String>Pedro</x:String>
-                <x:String>Laura</x:String>
-                <x:String>Diego</x:String>
-                <x:String>Mirta</x:String>
-                <x:String>Lucas</x:String>
+
+                <Picker.Items>
+
+                    <x:String>Pedro</x:String>
+                    <x:String>Laura</x:String>
+                    <x:String>Diego</x:String>
+                    <x:String>Mirta</x:String>
+                    <x:String>Lucas</x:String>
                 </Picker.Items>
             </Picker>
 
-        <Entry x:Name="seguimiento1"
-            Placeholder="Ingrese seguimiento nota1"
-               Keyboard="Numeric"
-        />
-        <Entry x:Name="examen1"
+            <Label 
+    Text="Seguimiento Nota 1"
+    VerticalTextAlignment="Center"
+    Grid.Row="1"
+    Grid.Column="0"
+    TextColor="Blue"
+/>
+
+            <Entry x:Name="seguimiento1"
+    Placeholder="Ingrese seguimiento nota1"
+       Keyboard="Numeric"
+             Grid.Row="1"
+             Grid.Column="1"
+/>
+
+            <Label 
+Text="Examen 1"
+VerticalTextAlignment="Center"
+Grid.Row="2"
+Grid.Column="0"
+     TextColor="blue"
+    />            
+            <Entry x:Name="examen1"
     Placeholder="Ingrese nota examen1"
        Keyboard="Numeric"
+             Grid.Row="2"
+             Grid.Column="1"
 />
 
-        <Entry x:Name="seguimiento2"
+
+            <Entry x:Name="seguimiento2"
     Placeholder="Ingrese nota seguimiento2"
        Keyboard="Numeric"
+                   
+                Grid.Row="3"
+                Grid.Column="1"
 />
 
-        <Entry x:Name="examen2"
+            <Label 
+Text="Seguimiento Nota 2"
+VerticalTextAlignment="Center"
+Grid.Row="3"
+Grid.Column="0"
+                TextColor="Blue"
+    />
+
+            <Entry x:Name="examen2"
     Placeholder="Ingrese nota examen2"
        Keyboard="Numeric"
+              Grid.Row="4"
+              Grid.Column="1"
 />
+            <Label 
+Text="Examen 2"
+VerticalTextAlignment="Center"
+Grid.Row="4"
+Grid.Column="0"
+ TextColor="blue"
+    />
+            <Label 
+Text="FECHA"
+VerticalTextAlignment="Center"
+Grid.Row="5"
+Grid.Column="0"
+ TextColor="Blue"
+    />
+            <DatePicker x:Name="dtFecha"
+            Grid.Row="5"
+            Grid.Column="1">
+                
+            </DatePicker>
+
+        </Grid>
 
 
-        <DatePicker x:Name="dtFecha"></DatePicker>
+        
 
 
         <Button x:Name="btncalculonota"
