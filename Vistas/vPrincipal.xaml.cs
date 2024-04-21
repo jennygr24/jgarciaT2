@@ -2,10 +2,13 @@ namespace jgarciaT2.Vistas;
 
 public partial class vPrincipal : ContentPage
 {
-	public vPrincipal()
+	public vPrincipal(string usuarioRegistro)
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+
+        DisplayAlert("Alerta", "Bienvenido " + usuarioRegistro, "Cerrar");
+        lblUsuario.Text = "Usuario conectado: " + usuarioRegistro;
+    }
 
     private void btncalculonota_Clicked(object sender, EventArgs e)
     {

@@ -4,6 +4,9 @@
              x:Class="jgarciaT2.Vistas.vPrincipal"
              Title="vPrincipal">
     <VerticalStackLayout Padding="20">
+        <Label x:Name="lblUsuario"
+          HorizontalTextAlignment="End"
+         FontSize="14"/>
         <Label 
             Text="CALCULO DE NOTAS"
             VerticalOptions="Center" 

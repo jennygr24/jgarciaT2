@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new Vistas.vPrincipal();
+            MainPage = new NavigationPage(new Vistas.vLogin()); //Cambiar la página de ejecución
         }
     }
 }
